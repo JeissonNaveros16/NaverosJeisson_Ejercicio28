@@ -30,7 +30,7 @@ int main(int argc, char **argv)
     for(time = 0; time <= 2; time += DeltaT)
     {
         cout << "\t" << x << "\t" << y << endl;
-        rk4( DeltaT, y, vy, x, vx );
+        rk4( K, DeltaT, y, vy, x, vx );
     }
     
     return 0;
